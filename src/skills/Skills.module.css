@@ -3,6 +3,20 @@
     background-color: gold;
 }
 
+.skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .title {
     margin: 0 auto;
+    background-color: darkseagreen;
+}
+
+.skills {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
