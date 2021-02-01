@@ -1,15 +1,15 @@
 import React from 'react'
-import styles from './Project.module.css'
+import styles from './Project.module.scss'
 
 
 export const Project = (props) => {
     return (
         <div className={styles.projectBlock}>
-            <div className={styles.projectImg}>
-                <button className={styles.projectButton}>Смотреть</button>
+            <div className={styles.projectImg} style={props.style}>
+                <a className={styles.projectButton} href="#">Check on Github</a>
             </div>
             <div className={styles.descriptionContainer}>
-                <h3 className={styles.name}>{props.name}</h3>
+                <h3 className={styles.projectName}>{props.name}</h3>
                 <span className={styles.description}>{props.description}</span>
             </div>
         </div>

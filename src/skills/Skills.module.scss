@@ -1,0 +1,25 @@
+@import "../common/scss/variables";
+@import '../common/scss/mixins';
+
+.skillsBlock {
+  min-height: 100vh;
+  background-color: $primaryBackgroundColor;
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .title {
+      @include title
+    }
+    .skills {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 630px){
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../common/scss/variables";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  a {
+    font-family: $secondaryFont;
+    color: $primaryFontColor;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 25px 0 30px;
+  }
+}
+

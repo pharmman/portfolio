@@ -1,5 +1,7 @@
+@import "../common/scss/variables";
+
 .footerBlock {
-    background-color: #EBFFE4;
+    background-color: $primaryBackgroundColor;
 }
 
 .container {
@@ -7,20 +9,18 @@
 }
 
 .title {
+    font-family: $secondaryFont;
     margin: 0 auto;
-    background-color: #8FBC8F;
 }
 
 .listContacts {
     padding: 0;
-    border: 1px solid;
     width: 280px;
     display: flex;
     justify-content: space-between;
 }
 
 .contacts {
-    background-color: #C4C4C4;
     height: 40px;
     width: 40px;
 }

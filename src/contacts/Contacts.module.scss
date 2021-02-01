@@ -1,0 +1,18 @@
+@import '../common/scss/variables';
+@import '../common/scss/mixins';
+
+.contactsBlock {
+  min-height: 100vh;
+  background-color: $primaryBackgroundColor;
+
+  .container {
+    flex-direction: column;
+    justify-content: start;
+
+    .title {
+      margin: 0 auto;
+      @include title()
+    }
+  }
+}
+

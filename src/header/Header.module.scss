@@ -1,0 +1,9 @@
+@import "../common/scss/variables";
+
+.header {
+    min-height: 80px;
+    background-color: $secondBackgroundFontColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
