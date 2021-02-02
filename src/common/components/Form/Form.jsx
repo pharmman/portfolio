@@ -6,7 +6,7 @@ export const Form = () => {
         <form>
             <input name="name" type="text" className={styles.feedbackInput} placeholder="Name"/>
             <input name="email" type="text" className={styles.feedbackInput} placeholder="Email"/>
-            <textarea name="text" className={styles.feedbackInput} placeholder="Comment"></textarea>
+            <textarea name="text" className={styles.feedbackInput} placeholder="Comment"/>
             <input type="submit" value="SEND EMAIL"/>
         </form>
     )
