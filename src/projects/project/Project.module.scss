@@ -4,6 +4,7 @@
   background-color: #252525;
   width: 500px;
   margin: 10px 0 0 0;
+  padding: 0 10px 15px;
   @media screen and (max-width: 1260px) and (min-width: 880px) {
     width: 350px;
   }
@@ -28,7 +29,7 @@
 
     .projectButton {
       text-decoration: none;
-      border: 1px solid rgb(146, 148, 248);
+      border: 1px solid;
       position: relative;
       overflow: hidden;
       padding: 5px;
@@ -37,7 +38,7 @@
       font-family: $secondaryFont;
 
       &:hover {
-        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        box-shadow: 1px 1px 25px 10px rgba(250, 103, 32, 0.4);
       }
 
       &:before {
@@ -50,7 +51,6 @@
         background: linear-gradient(
                         120deg,
                         transparent,
-                        rgba(146, 148, 248, 0.4),
                         transparent
         );
         transition: all 650ms;
@@ -73,6 +73,5 @@
 
 .description {
   display: block;
-  text-align: center;
 }
 

@@ -14,3 +14,30 @@
     text-align: center;
   }
 }
+
+@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin container() {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (max-width: 300px) {
+    width: 100%;
+  }
+  @media screen and(max-width: 766px) {
+    justify-content: center;
+  }
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}
