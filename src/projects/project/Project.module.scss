@@ -28,7 +28,7 @@
 
     .projectButton {
       text-decoration: none;
-      border: 1px solid rgb(146, 148, 248);
+      border: 1px solid $secondBackgroundFontColor;
       position: relative;
       overflow: hidden;
       padding: 5px;
@@ -37,7 +37,7 @@
       font-family: $secondaryFont;
 
       &:hover {
-        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        box-shadow: 1px 1px 25px 10px rgba(250, 194, 103, 0.4);
       }
 
       &:before {
@@ -50,7 +50,7 @@
         background: linear-gradient(
                         120deg,
                         transparent,
-                        rgba(146, 148, 248, 0.4),
+                        rgba(250, 194, 103, 0.4),
                         transparent
         );
         transition: all 650ms;
@@ -64,7 +64,7 @@
 }
 
 .descriptionContainer {
-  padding: 0 10px;
+  padding: 0 10px 15px;
 
   .projectName {
     font-family: $secondaryFont;
@@ -73,6 +73,5 @@
 
 .description {
   display: block;
-  text-align: center;
 }
 
