@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Contacts.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
-import {Form} from "../common/components/Form/Form";
+import {Form} from "./Form/Form";
 import {ShadowTitle} from "../common/components/ShadowTitle/ShadowTitle";
 
 
