@@ -5,10 +5,8 @@
   min-height: 100vh;
   background-color: $primaryBackgroundColor;
   .container {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-
+      @include container;
+      @include flex(column, flex-start, center, nowrap);
     .title {
       @include title
     }

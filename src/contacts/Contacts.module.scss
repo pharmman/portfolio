@@ -6,9 +6,8 @@
   background-color: $primaryBackgroundColor;
 
   .container {
-    flex-direction: column;
-    justify-content: start;
-
+      @include container;
+      @include flex(column, flex-start, center, wrap);
     .title {
       margin: 0 auto;
       @include title()
