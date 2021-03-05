@@ -1,25 +1,36 @@
 @import "../common/scss/variables";
 
 .header {
-    min-height: 80px;
-    background-color: $secondBackgroundFontColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    transition: all ease-in-out .4s;
+  min-height: 80px;
+  background-color: $secondBackgroundFontColor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  transition: all ease-in-out .4s;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    background-color: $primaryBackgroundColor;
+    min-height: 0;
+  }
+
 }
 
 .scrolledHeader {
-    min-height: 40px;
-    background-color: $secondBackgroundFontColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    transition: all ease-in-out .4s;
+  min-height: 40px;
+  background-color: $secondBackgroundFontColor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  transition: all ease-in-out .4s;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    background-color: $primaryBackgroundColor;
+    min-height: 0;
+  }
 }

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import styles from './Header.module.scss'
 import Nav from "./nav/Nav";
+import BurgerNav from './burgerNav/burgerNav';
 
 export const Header = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -28,6 +29,7 @@ export const Header = () => {
     return (
         <div className={defaultHeader ?  styles.header : styles.scrolledHeader}>
             <Nav/>
+            <BurgerNav/>
         </div>
     );
 }

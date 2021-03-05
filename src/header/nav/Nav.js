@@ -5,7 +5,7 @@ import {Link} from 'react-scroll'
 
 const Nav = () => {
     return (
-        <div  className={styles.nav}>
+        <div className={styles.nav}>
             <Link activeClass={styles.active} smooth={true} spy={true} to='main'>Main</Link>
             <Link activeClass={styles.active} smooth={true} spy={true} to='skills'>Skills</Link>
             <Link activeClass={styles.active} smooth={true} spy={true} to='projects'>Projects</Link>
