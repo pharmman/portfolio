@@ -9,4 +9,17 @@
     width: 100%;
     position: fixed;
     z-index: 10;
+    transition: all ease-in-out .4s;
+}
+
+.scrolledHeader {
+    min-height: 40px;
+    background-color: $secondBackgroundFontColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    transition: all ease-in-out .4s;
 }

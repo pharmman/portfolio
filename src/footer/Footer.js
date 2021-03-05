@@ -4,10 +4,12 @@ import linkedinIcon from '../assets/images/linkedin.svg'
 import vkIcon from '../assets/images/vk.svg'
 import facebookIcon from '../assets/images/facebook.svg'
 import telegramIcon from '../assets/images/telegram.svg'
+import Fade from 'react-reveal/Fade';
 
 export const Footer = () => {
     return (
         <div className={styles.footerBlock}>
+            <Fade right cascade>
             <div className={styles.container}>
                 <h2 className={styles.title}>Rasskazov Aleksandr</h2>
                 <ul className={styles.listContacts}>
@@ -18,6 +20,7 @@ export const Footer = () => {
                 </ul>
                 <p>&copy; 2021 Все права защищены</p>
             </div>
+            </Fade>
         </div>
     )
 }

@@ -5,29 +5,31 @@ import {ShadowTitle} from '../common/components/ShadowTitle/ShadowTitle';
 import {faCode} from '@fortawesome/free-solid-svg-icons';
 import {faJs} from '@fortawesome/free-brands-svg-icons';
 import {faReact} from '@fortawesome/free-brands-svg-icons/faReact';
-
+import Fade from 'react-reveal/Fade';
 
 export const Skills = () => {
-        return (
-        <div className={styles.skillsBlock}>
-            <div className={styles.container}>
-                <h2 className={styles.title}>My <span>Skills</span> <ShadowTitle title={'Skills'}/></h2>
-                <div className={styles.skills}>
-                    <Skill title={'JS'}
-                           icon={faJs}
-                           description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. neque nulla officia,' +
-                           ' quibusdam similique.'}/>
-                    <Skill title={'React'}
-                           icon={faReact}
-                           description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
-                           'rem saepe ullam? Doloribus, harum.'}/>
-                    <Skill title={'HTML, CSS'}
-                           icon={faCode}
-                           description={'Lorem ipsum dolor sit amet, consectetur ' +
-                           'adipisicing elit. ut? A consequuntur illo optio.'}/>
+    return (
+            <div className={styles.skillsBlock}>
+                <Fade right cascade>
+                <div className={styles.container}>
+                    <h2 className={styles.title}>My <span>Skills</span> <ShadowTitle title={'Skills'}/></h2>
+                    <div className={styles.skills}>
+                        <Skill title={'JS'}
+                               icon={faJs}
+                               description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. neque nulla officia,' +
+                               ' quibusdam similique.'}/>
+                        <Skill title={'React'}
+                               icon={faReact}
+                               description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
+                               'rem saepe ullam? Doloribus, harum.'}/>
+                        <Skill title={'HTML, CSS'}
+                               icon={faCode}
+                               description={'Lorem ipsum dolor sit amet, consectetur ' +
+                               'adipisicing elit. ut? A consequuntur illo optio.'}/>
+                    </div>
                 </div>
+                </Fade>
             </div>
 
-        </div>
     )
 }
