@@ -18,7 +18,7 @@ export const Footer = () => {
                     <li className={styles.contact}><a href={'3'}> <img alt={'#'} src={facebookIcon} /></a></li>
                     <li className={styles.contact}><a href={'4'}> <img alt={'#'} src={telegramIcon} /></a></li>
                 </ul>
-                <p>&copy; 2021 Все права защищены</p>
+                <p>&copy; 2021 All rights reserved</p>
             </div>
             </Fade>
         </div>

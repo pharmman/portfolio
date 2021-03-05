@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 
 export const Skills = () => {
     return (
-            <div className={styles.skillsBlock}>
+            <div id='skills' className={styles.skillsBlock}>
                 <Fade right cascade>
                 <div className={styles.container}>
                     <h2 className={styles.title}>My <span>Skills</span> <ShadowTitle title={'Skills'}/></h2>

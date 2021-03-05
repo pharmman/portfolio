@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import styles from './Header.module.scss'
-import Nav from "../nav/Nav";
+import Nav from "./nav/Nav";
 
 export const Header = () => {
     const [scrollY, setScrollY] = useState(0);
     const [defaultHeader, setDefaultHeader] = useState(true)
 
     const changeHeader = () => {
-        if (window.pageYOffset < scrollY) {
+        if (window.pageYOffset < scrollY || window.pageYOffset === 0) {
             setDefaultHeader(true)
         } else {
             setDefaultHeader(false)

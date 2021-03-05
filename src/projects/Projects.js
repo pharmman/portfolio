@@ -17,7 +17,7 @@ export const Projects = () => {
 
     }
     return (
-        <div className={styles.projectsBlock}>
+        <div id='projects' className={styles.projectsBlock}>
             <Fade right cascade>
             <div className={styles.container}>
                 <h2 className={styles.title}>My <span>projects</span> <ShadowTitle title={'Projects'}/></h2>
