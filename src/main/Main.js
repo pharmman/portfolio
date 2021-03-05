@@ -11,7 +11,9 @@ export const Main = () => {
                     <p>Frontend Developer</p>
                 </div>
                     <div className={styles.photo}>
-                        Photo
+                        <div className={styles.image}>
+
+                        </div>
                     </div>
             </div>
         </div>

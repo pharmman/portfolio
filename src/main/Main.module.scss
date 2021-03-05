@@ -9,6 +9,7 @@
   .container {
     @include container;
     @include flex(row, space-between, center, wrap);
+
     .text {
       width: 300px;
 
@@ -33,16 +34,43 @@
 
       & p {
         margin: 10px 0 23px;
-        font-size: 16px;
+        font-size: 22px;
         line-height: 32px;
       }
     }
 
     .photo {
-      width: 300px;
-      height: 400px;
-      background-color: #f3e4e4;
+      position: relative;
+      z-index: 1;
+
+      .image {
+        width: 400px;
+        height: 500px;
+        background-image: url('../assets/images/myPhoto.jpg');
+        @include bgSettings();
+        background-position-x: 56%;
+
+        &:before {
+          content: '';
+          position: absolute;
+          height: 110%;
+          width: 105%;
+          border: 5px solid $secondBackgroundFontColor;
+          left: 15px;
+          top: -15px;
+          z-index: -1;
+          @media screen and (max-width: 500px) {
+           left: 5px;
+          }
+        }
+        @media screen and (max-width: 500px) {
+          width: 260px;
+          height: 360px;
+
+        }
+      }
     }
+
 
     @media screen and (max-width: 800px) {
       height: auto;
