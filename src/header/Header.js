@@ -4,8 +4,14 @@ import Nav from "../nav/Nav";
 
 export const Header = () => {
     const [scrollY, setScrollY] = useState(0);
+    const [defaultHeader, setDefaultHeader] = useState(false)
 
     const changeHeader = () => {
+        if (window.pageYOffset < scrollY) {
+            setDefaultHeader(true)
+        } else {
+            setDefaultHeader(false)
+        }
         setScrollY(window.pageYOffset)
     }
 
@@ -20,7 +26,7 @@ export const Header = () => {
     })
 
     return (
-        <div className={scrollY < 100?  styles.header : styles.scrolledHeader}>
+        <div className={defaultHeader ?  styles.header : styles.scrolledHeader}>
             <Nav/>
         </div>
     );
