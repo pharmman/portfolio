@@ -3,7 +3,7 @@ import {Skill} from './skill/Skill';
 import styles from './Skills.module.scss'
 import {ShadowTitle} from '../common/components/ShadowTitle/ShadowTitle';
 import {faCode} from '@fortawesome/free-solid-svg-icons';
-import {faJs} from '@fortawesome/free-brands-svg-icons';
+import {faJsSquare} from '@fortawesome/free-brands-svg-icons';
 import {faReact} from '@fortawesome/free-brands-svg-icons/faReact';
 import Fade from 'react-reveal/Fade';
 
@@ -15,7 +15,7 @@ export const Skills = () => {
                     <h2 className={styles.title}>My <span>Skills</span> <ShadowTitle title={'Skills'}/></h2>
                     <div className={styles.skills}>
                         <Skill title={'JS'}
-                               icon={faJs}
+                               icon={faJsSquare}
                                description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. neque nulla officia,' +
                                ' quibusdam similique.'}/>
                         <Skill title={'React'}
