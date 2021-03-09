@@ -6,17 +6,18 @@
   background-color: $primaryBackgroundColor;
 
   .container {
-      @include container;
-      @include flex(column, flex-start, center, wrap);
+    @include container;
+    @include flex(column, flex-start, center, wrap);
+
     .title {
       @include title
     }
+
     .skills {
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      @media screen and (max-width: 630px){
+      @include flex(row, space-between, center, wrap);
+      @media screen and (max-width: 630px) {
         justify-content: center;
       }
     }

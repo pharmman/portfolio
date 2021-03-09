@@ -1,11 +1,10 @@
 @import "../common/scss/variables";
+@import "../common/scss/mixins";
 
 .header {
   min-height: 80px;
-  background-color: $secondBackgroundFontColor;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  background-color: $primaryColor;
+  @include flex(row, flex-end, center, wrap);
   width: 100%;
   position: fixed;
   z-index: 9999;
@@ -20,10 +19,8 @@
 
 .scrolledHeader {
   min-height: 40px;
-  background-color: $secondBackgroundFontColor;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  background-color: $primaryColor;
+  @include flex(row, flex-end, center, wrap);
   width: 100%;
   position: fixed;
   z-index: 10;

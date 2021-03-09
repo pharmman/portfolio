@@ -21,6 +21,9 @@
 
     .text {
       width: 300px;
+      @media screen and (max-width: 875px){
+        padding-top: 30px;
+      }
 
       & h1 {
         font-size: 45px;
@@ -31,7 +34,7 @@
 
       & h1 span {
         text-transform: uppercase;
-        color: $secondBackgroundFontColor;
+        color: $primaryColor;
       }
 
       & h6 {
@@ -51,6 +54,9 @@
     .photo {
       position: relative;
       z-index: 1;
+      @media screen and (max-width: 875px){
+        margin-top: 30px;
+      }
 
       .image {
         width: 400px;
@@ -64,7 +70,7 @@
           position: absolute;
           height: 110%;
           width: 105%;
-          border: 5px solid $secondBackgroundFontColor;
+          border: 5px solid $primaryColor;
           left: 15px;
           top: -15px;
           z-index: -1;

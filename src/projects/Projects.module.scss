@@ -13,9 +13,7 @@
 
     .projects {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flex(row, space-between, center, wrap);
       @media screen and (max-width: 880px) {
         justify-content: center;
       }
