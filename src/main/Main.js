@@ -30,6 +30,7 @@ export const Main = () => {
                         <h6>HI THERE !</h6>
                         <h1>I'M <span className={styles.name}>Aleksandr Rasskazov</span></h1>
                         <ReactTypingEffect
+                            eraseDelay={1000}
                             text={['Frontend Developer']}
                         />
                     </div>
