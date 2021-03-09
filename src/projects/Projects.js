@@ -24,12 +24,14 @@ export const Projects = () => {
                 <div className={styles.projects}>
                     <Project name={'Social Network'}
                              style={social}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
-                             'Aspernatur at blanditiis cum in qui soluta ullam. Adipisci aut c'}/>
+                             githubLink={'https://github.com/pharmman/Social-Network'}
+                             projectLink={'https://pharmman.github.io/Social-Network/#/'}
+                             description={'React application with functional and class components.Used Typescript.'}/>
                     <Project name={'Todolist'}
                              style={todolist}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
-                             ' Adipisci aliquid at delectus eligendi eum ex fuga illo,'}/>
+                             githubLink={'https://github.com/pharmman/TodoList'}
+                             projectLink={''}
+                             description={'React application with functional components. Used Hooks. Redux Toolkit, Typescript.'}/>
                 </div>
             </div>
             </Fade>

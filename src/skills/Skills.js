@@ -17,19 +17,16 @@ export const Skills = () => {
                     <div className={styles.skills}>
                         <Skill title={'JS'}
                                icon={faJsSquare}
-                               description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. neque nulla officia,' +
-                               ' quibusdam similique.'}/>
+                               description={'Modern Javascript. ES6 and newer. Typescript.'}/>
                         <Skill title={'React'}
                                icon={faReact}
-                               description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
-                               'rem saepe ullam? Doloribus, harum.'}/>
+                               description={'Development single-page application projects using' +
+                               ' functional components and modern approaches.'}/>
                         <Skill title={'HTML, CSS'}
                                icon={faCode}
-                               description={'Lorem ipsum dolor sit amet, consectetur ' +
-                               'adipisicing elit. ut? A consequuntur illo optio.'}/>
+                               description={'Responsive Web Design,  Cross-Browser Compatibility. Development with Preprocessors.'}/>
                         <SkillWithoutFA title={'Redux'}
-                               description={'Lorem ipsum dolor sit amet, consectetur ' +
-                               'adipisicing elit. ut? A consequuntur illo optio.'}/>
+                                        description={'State management in React. With usage Redux Toolkit.'}/>
                     </div>
                 </div>
             </Fade>
