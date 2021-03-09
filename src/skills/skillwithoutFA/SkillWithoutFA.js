@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from './Skill.module.scss'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import styles from './SkillWithoutFA.module.scss'
+import redux from '../../assets/images/redux.svg'
 
 
-export const Skill = (props) => {
+export const SkillWithoutFA = (props) => {
     return (
             <div className={styles.skill}>
                 <div className={styles.icon}>
-                    <FontAwesomeIcon size={'2x'} icon={props.icon}/>
+                    <object type="image/svg+xml" data={redux} width="70" height="70">Redux logo</object>
                 </div>
                 <h3>{props.title}</h3>
                 <span className={styles.skillDescription}>

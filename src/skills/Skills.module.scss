@@ -5,19 +5,19 @@
   min-height: 100vh;
   background-color: $primaryBackgroundColor;
 
-  .skillsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
+  .container {
+    @include container;
+    @include flex(column, flex-start, center, wrap);
 
     .title {
       @include title
     }
+
     .skills {
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      @media screen and (max-width: 630px){
+      @include flex(row, space-between, center, wrap);
+      @media screen and (max-width: 630px) {
         justify-content: center;
       }
     }

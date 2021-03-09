@@ -1,26 +1,38 @@
 @import "../common/scss/variables";
+@import "../common/scss/mixins";
 
 .footerBlock {
-    background-color: $primaryBackgroundColor;
-}
+  background-color: $primaryBackgroundColor;
 
-.container {
-    flex-direction: column;
-}
+  .container {
+    @include container;
+    @include flex(column, space-between, center, wrap);
 
-.title {
-    font-family: $secondaryFont;
-    margin: 0 auto;
-}
+    .title {
+      font-family: $secondaryFont;
+      margin: 0 auto;
+    }
 
-.listContacts {
-    padding: 0;
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-}
+    .listContacts {
+      padding: 0;
+      width: 280px;
+      @include flex(row, space-between, center, wrap);
+      .contact {
+        height: 40px;
+        width: 40px;
+        position: relative;
 
-.contacts {
-    height: 40px;
-    width: 40px;
+        &:hover {
+          &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -6px;
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
 }

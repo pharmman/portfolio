@@ -1,10 +1,10 @@
 import React from 'react'
-import styleContainer from '../common/styles/Container.module.scss'
 import styles from './Projects.module.scss'
-import {Project} from "./project/Project";
+import {Project} from './project/Project';
 import socialNetworkImage from '../assets/images/socialNetworkImage.png'
 import todolistImage from '../assets/images/todolistImage.png'
-import {ShadowTitle} from "../common/components/ShadowTitle/ShadowTitle";
+import {ShadowTitle} from '../common/components/ShadowTitle/ShadowTitle';
+import Fade from 'react-reveal/Fade';
 
 
 export const Projects = () => {
@@ -17,20 +17,24 @@ export const Projects = () => {
 
     }
     return (
-        <div className={styles.projectsBlock}>
-            <div className={`${styleContainer.container} ${styles.container}`}>
+        <div id='projects' className={styles.projectsBlock}>
+            <Fade left cascade>
+            <div className={styles.container}>
                 <h2 className={styles.title}>My <span>projects</span> <ShadowTitle title={'Projects'}/></h2>
                 <div className={styles.projects}>
                     <Project name={'Social Network'}
                              style={social}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
-                             'Aspernatur at blanditiis cum in qui soluta ullam. Adipisci aut c'}/>
+                             githubLink={'https://github.com/pharmman/Social-Network'}
+                             projectLink={'https://pharmman.github.io/Social-Network/#/'}
+                             description={'React application with functional and class components.Used Typescript.'}/>
                     <Project name={'Todolist'}
                              style={todolist}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
-                             ' Adipisci aliquid at delectus eligendi eum ex fuga illo,'}/>
+                             githubLink={'https://github.com/pharmman/TodoList'}
+                             projectLink={''}
+                             description={'React application with functional components. Used Hooks. Redux Toolkit, Typescript.'}/>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

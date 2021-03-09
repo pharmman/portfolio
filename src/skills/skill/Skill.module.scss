@@ -1,19 +1,16 @@
 @import "../../common/scss/variables";
+@import "../../common/scss/mixins";
 
 .skill {
+    @include flex(column, flex-start, center, wrap);
+    @include text($secondaryFont, 18px, 1.2, 500);
     padding: 20px 0 0 0;
     background-color: #252525;
     width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-height: 300px;
     text-align: center;
     margin: 10px 0 0 0;
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
-    font-family: $secondaryFont;
     .icon {
         color: #4e93e6;
         height: 80px;
@@ -21,7 +18,7 @@
         margin: 0 auto 30px;
         background: rgba(255,255,255,0.1);
         display: block;
-        line-height: 80px;
+        line-height: 100px;
         font-size: 30px;
         box-shadow: -6px 10px 40px rgba(0, 0, 0, 6%);
         text-align: center;
@@ -29,12 +26,14 @@
                         45deg
         );
         transform-origin: center;
+        svg {
+            transform: rotate(-45deg);
+            color: white;
+        }
     }
     .skillDescription {
-        font-family: $primaryFont;
-        font-size: 14px;
         text-transform: capitalize;
-        line-height: 1.6;
+        @include text($primaryFont, 14px, 1.6, 500);
     }
 }
 

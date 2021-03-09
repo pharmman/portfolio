@@ -1,10 +1,10 @@
 @import '../../common/scss/variables';
+@import '../../common/scss/mixins';
 
 .projectBlock {
   background-color: #252525;
   width: 500px;
   margin: 10px 0 0 0;
-  padding: 0 10px 15px;
   @media screen and (max-width: 1260px) and (min-width: 880px) {
     width: 350px;
   }
@@ -13,23 +13,20 @@
     width: 100%;
     height: 200px;
     background-color: #C4C4C4;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include bgSettings();
+    @include flex(column, space-evenly, center, wrap);
 
     a {
       font-size: 1rem;
       padding: 1rem 3rem;
-      color: $secondBackgroundFontColor;
+      color: $primaryColor;
       background-color: rgba(17, 17, 17, 0.7);
       border-radius: 10px;
     }
 
     .projectButton {
       text-decoration: none;
-      border: 1px solid;
+      border: 1px solid $primaryColor;
       position: relative;
       overflow: hidden;
       padding: 5px;
@@ -38,7 +35,7 @@
       font-family: $secondaryFont;
 
       &:hover {
-        box-shadow: 1px 1px 25px 10px rgba(250, 103, 32, 0.4);
+        box-shadow: 1px 1px 25px 10px rgba(250, 194, 103, 0.4);
       }
 
       &:before {
@@ -51,6 +48,7 @@
         background: linear-gradient(
                         120deg,
                         transparent,
+                        rgba(250, 194, 103, 0.4),
                         transparent
         );
         transition: all 650ms;
@@ -64,10 +62,11 @@
 }
 
 .descriptionContainer {
-  padding: 0 10px;
+  padding: 0 10px 15px;
 
   .projectName {
     font-family: $secondaryFont;
+    text-align: center;
   }
 }
 

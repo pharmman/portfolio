@@ -5,19 +5,15 @@
   min-height: 100vh;
   background-color: $primaryBackgroundColor;
   .container {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-
+      @include container;
+      @include flex(column, flex-start, center, nowrap);
     .title {
       @include title
     }
 
     .projects {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flex(row, space-between, center, wrap);
       @media screen and (max-width: 880px) {
         justify-content: center;
       }
