@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 export const Footer = () => {
     return (
         <div className={styles.footerBlock}>
-            <Fade right cascade>
+            <Fade left cascade>
             <div className={styles.container}>
                 <h2 className={styles.title}>Rasskazov Aleksandr</h2>
                 <ul className={styles.listContacts}>

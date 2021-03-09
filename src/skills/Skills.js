@@ -11,7 +11,7 @@ import {SkillWithoutFA} from './skillwithoutFA/SkillWithoutFA';
 export const Skills = () => {
     return (
         <div id='skills' className={styles.skillsBlock}>
-            <Fade right cascade>
+            <Fade left cascade>
                 <div className={styles.container}>
                     <h2 className={styles.title}>My <span>Skills</span> <ShadowTitle title={'Skills'}/></h2>
                     <div className={styles.skills}>

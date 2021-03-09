@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 export const Form = () => {
     return (
-        <Fade right cascade>
+        <Fade left cascade>
         <form>
             <input name="name" type="text" className={styles.feedbackInput} placeholder="Name"/>
             <input name="email" type="text" className={styles.feedbackInput} placeholder="Email"/>

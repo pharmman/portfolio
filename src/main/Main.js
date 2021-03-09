@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './Main.module.scss'
 import Particles from 'react-particles-js';
-import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt'
+import Fade from 'react-reveal/Fade';
 
 export const Main = () => {
-    const particlesParams = {
+     const particlesParams = {
         particles: {
             number: {
                 value: 150,
@@ -24,7 +24,7 @@ export const Main = () => {
                 className={styles.particles}
                 params={particlesParams}
             />
-            <Fade right cascade>
+            <Fade left cascade>
                 <div className={styles.container}>
                     <div className={styles.text}>
                         <h6>HI THERE !</h6>

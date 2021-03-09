@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 export const Contacts = () => {
     return (
         <div id='contacts' className={styles.contactsBlock}>
-            <Fade right cascade>
+            <Fade left cascade>
             <div className={styles.container}>
                 <h2 className={styles.title}>GET IN <span>TOUCH</span><ShadowTitle title={'Contact'}/></h2>
                 <Form/>
