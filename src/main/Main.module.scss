@@ -64,6 +64,9 @@
         background-image: url('../assets/images/myPhoto.jpg');
         @include bgSettings();
         background-position-x: 56%;
+        @media screen and (max-height: 600px) {
+          height: 300px;
+        }
 
         &:before {
           content: '';
@@ -79,8 +82,8 @@
           }
         }
         @media screen and (max-width: 500px) {
-          width: 260px;
-          height: 360px;
+          width: 210px;
+          height: 310px;
 
         }
       }
