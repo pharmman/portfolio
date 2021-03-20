@@ -30,7 +30,7 @@ export const Projects = () => {
                     <Project name={'Todolist'}
                              style={todolist}
                              githubLink={'https://github.com/pharmman/TodoList'}
-                             projectLink={''}
+                             projectLink={'https://pharmman.github.io/TodoList/'}
                              description={'React application with functional components. Used Hooks. Redux Toolkit, Typescript.'}/>
                 </div>
             </div>
