@@ -4,8 +4,14 @@ import Particles from 'react-particles-js';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt'
 import Fade from 'react-reveal/Fade';
+import myPhoto from '../assets/images/myPhoto.png';
 
 export const Main = () => {
+
+    const photo = {
+        backgroundImage: `url(${myPhoto}`
+    }
+
      const particlesParams = {
         particles: {
             number: {
@@ -37,11 +43,10 @@ export const Main = () => {
                     <div className={styles.photo}>
                         <Tilt className="Tilt" options={{max: 25}}>
                             <div className="Tilt-inner">
-                                <div className={styles.image}>
+                                <div style={photo} className={styles.image}>
                                 </div>
                             </div>
                         </Tilt>
-
                     </div>
                 </div>
             </Fade>

@@ -61,7 +61,6 @@
       .image {
         width: 400px;
         height: 500px;
-        background-image: url('../assets/images/myPhoto.jpg');
         @include bgSettings();
         background-position-x: 56%;
         @media screen and (max-height: 600px) {
