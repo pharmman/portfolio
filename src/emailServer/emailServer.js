@@ -8,10 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 async function main() {
 
-    app.get('/', (req, res) => {
-        res.send('Hello World!')
-    })
-
     let login = process.env.LOGIN
     let password = process.env.PASSWORD
 
@@ -28,7 +24,7 @@ async function main() {
 
         let info =  transporter.sendMail({
             from: name,
-            sender: email,// sender address
+            sender: email && name,// sender address
             to: 'pharm.sale777@gmail.com', // list of receivers
             subject: email, // Subject line
             text: text, // plain text body
