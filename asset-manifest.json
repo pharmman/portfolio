@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c914ec1d.chunk.css",
-    "main.js": "/portfolio/static/js/main.f439bb50.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f439bb50.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.9db4f6c5.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.9db4f6c5.js.map",
-    "static/js/2.c10436ee.chunk.js": "/portfolio/static/js/2.c10436ee.chunk.js",
-    "static/js/2.c10436ee.chunk.js.map": "/portfolio/static/js/2.c10436ee.chunk.js.map",
-    "static/js/3.8d7d5801.chunk.js": "/portfolio/static/js/3.8d7d5801.chunk.js",
-    "static/js/3.8d7d5801.chunk.js.map": "/portfolio/static/js/3.8d7d5801.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/main.c914ec1d.chunk.css.map": "/portfolio/static/css/main.c914ec1d.chunk.css.map",
-    "static/js/2.c10436ee.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c10436ee.chunk.js.LICENSE.txt",
-    "static/media/facebook.31ef16dd.svg": "/portfolio/static/media/facebook.31ef16dd.svg",
-    "static/media/linkedin.7defd339.svg": "/portfolio/static/media/linkedin.7defd339.svg",
-    "static/media/myPhoto.ce2ccf45.png": "/portfolio/static/media/myPhoto.ce2ccf45.png",
-    "static/media/redux.bd5b102b.svg": "/portfolio/static/media/redux.bd5b102b.svg",
-    "static/media/socialNetworkImage.09699dc4.png": "/portfolio/static/media/socialNetworkImage.09699dc4.png",
-    "static/media/telegram.af2fe28b.svg": "/portfolio/static/media/telegram.af2fe28b.svg",
-    "static/media/todolistImage.709f805c.png": "/portfolio/static/media/todolistImage.709f805c.png",
-    "static/media/vk.8e9ac5f1.svg": "/portfolio/static/media/vk.8e9ac5f1.svg"
+    "main.css": "/static/css/main.c914ec1d.chunk.css",
+    "main.js": "/static/js/main.748e074f.chunk.js",
+    "main.js.map": "/static/js/main.748e074f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.aafaefdb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.aafaefdb.js.map",
+    "static/js/2.c10436ee.chunk.js": "/static/js/2.c10436ee.chunk.js",
+    "static/js/2.c10436ee.chunk.js.map": "/static/js/2.c10436ee.chunk.js.map",
+    "static/js/3.8d7d5801.chunk.js": "/static/js/3.8d7d5801.chunk.js",
+    "static/js/3.8d7d5801.chunk.js.map": "/static/js/3.8d7d5801.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c914ec1d.chunk.css.map": "/static/css/main.c914ec1d.chunk.css.map",
+    "static/js/2.c10436ee.chunk.js.LICENSE.txt": "/static/js/2.c10436ee.chunk.js.LICENSE.txt",
+    "static/media/facebook.31ef16dd.svg": "/static/media/facebook.31ef16dd.svg",
+    "static/media/linkedin.7defd339.svg": "/static/media/linkedin.7defd339.svg",
+    "static/media/myPhoto.ce2ccf45.png": "/static/media/myPhoto.ce2ccf45.png",
+    "static/media/redux.bd5b102b.svg": "/static/media/redux.bd5b102b.svg",
+    "static/media/socialNetworkImage.09699dc4.png": "/static/media/socialNetworkImage.09699dc4.png",
+    "static/media/telegram.af2fe28b.svg": "/static/media/telegram.af2fe28b.svg",
+    "static/media/todolistImage.709f805c.png": "/static/media/todolistImage.709f805c.png",
+    "static/media/vk.8e9ac5f1.svg": "/static/media/vk.8e9ac5f1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9db4f6c5.js",
+    "static/js/runtime-main.aafaefdb.js",
     "static/js/2.c10436ee.chunk.js",
     "static/css/main.c914ec1d.chunk.css",
-    "static/js/main.f439bb50.chunk.js"
+    "static/js/main.748e074f.chunk.js"
   ]
 }
