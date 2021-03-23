@@ -42,6 +42,24 @@ form {
   border: 2px solid $primaryColor;
 }
 
+.feedbackAnswer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  transition: all 0.3s;
+  padding: 13px;
+  height: 350px;
+  text-align: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 500px) {
+    height: auto;
+    padding: 0;
+    font-size: 38px;
+  }
+}
+
 textarea {
   height: 150px;
   line-height: 150%;
