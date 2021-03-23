@@ -13,7 +13,7 @@ export const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3010/sendMessage', {
+        axios.post('https://portfolio-rasskazov-1.herokuapp.com/sendMessage', {
             name,
             email,
             text
