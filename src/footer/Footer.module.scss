@@ -5,7 +5,6 @@
   background-color: $primaryBackgroundColor;
 
   .container {
-    @include container;
     @include flex(column, space-between, center, wrap);
 
     .title {
