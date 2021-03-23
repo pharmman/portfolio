@@ -24,10 +24,10 @@ async function main() {
 
         let info =  transporter.sendMail({
             from: name,
-            sender: email && name,// sender address
+            sender: email,// sender address
             to: 'pharm.sale777@gmail.com', // list of receivers
-            subject: email, // Subject line
-            text: text, // plain text body
+            subject: name, // Subject line
+            text:  text, // plain text body
             // html: `<b>${email}</b>`, // html body
         });
         res.send(req.body)
