@@ -12,11 +12,14 @@ async function main() {
         res.send('Hello World!')
     })
 
+    let login = process.env.LOGIN
+    let password = process.env.PASSWORD
+
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'aleksandrrasskazovwork@gmail.com', // generated ethereal user
-            pass: 'Kavabanga2108', // generated ethereal password
+            user: login, // generated ethereal user
+            pass: password, // generated ethereal password
         },
     });
 
@@ -35,10 +38,11 @@ async function main() {
     })
 }
 
+let port = process.env.PORT || 3010
 
 
-app.listen(3010, () => {
-    console.log(`Example app listening at http://localhost:${3010}`)
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
 })
 
 main().catch(console.error);
