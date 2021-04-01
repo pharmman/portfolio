@@ -21,7 +21,7 @@
 
     .text {
       width: 300px;
-      @media screen and (max-width: 875px) {
+      @media screen and (max-width: 875px) and (min-width: 480px) {
         padding-top: 30px;
       }
 
@@ -42,6 +42,9 @@
         font-weight: 400;
         text-transform: uppercase;
         margin-bottom: 0;
+        @media screen and (max-width: 480px) {
+          margin-top: 0;
+        }
       }
 
       span:nth-child(3) {
@@ -56,6 +59,9 @@
       z-index: 1;
       @media screen and (max-width: 875px) {
         margin-top: 30px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-top: -70px;
       }
 
       .image {
@@ -95,8 +101,7 @@
     @media screen and (max-width: 800px) {
       text-align: center;
     }
-    @media screen and (max-height: 850px) {
-      height: auto;
+    @media screen and (max-height: 750px) {
       text-align: center;
     }
   }
